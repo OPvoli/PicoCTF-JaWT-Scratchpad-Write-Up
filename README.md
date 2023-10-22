@@ -10,5 +10,7 @@ Step 6: Go to proxy and click forward until cookie=jwt is displayed in the respo
 Step 7: Open terminal, change directory into the jwt_tool directory.<br />
 Step 8: Use command python3 jwt_tool.py with jwt token to view the header and payload of the jwt token. The algorithm is HS256.<br />
 Step 9: Use command python3 jwt_tool.py <token> -C -d /usr/share/wordlists/rockyou.txt to perform dictionary attack using rockyou.txt. The jwt secret is ilovepico.<br />
-Step 10: Use command python3 jwt_tool.py <token> -T -S hs256 -p "ilovepico" to tamper the token. -T refers to tamper, -S refers to signature and -p refers to secret. Next, follow the tamper of token as figure below.<br /> 
+Step 10: Use command python3 jwt_tool.py <token> -T -S hs256 -p "ilovepico" to tamper the token. -T refers to tamper, -S refers to signature and -p refers to secret. <br /> 
 Step 11: In Burp Suite, modify the jwt value with tampered token and click send. The flag is displayed in the response.<br />
+
+You may find more details and ways to get the flag through the documentation.<br />
